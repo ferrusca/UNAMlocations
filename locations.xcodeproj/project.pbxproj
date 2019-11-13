@@ -12,10 +12,11 @@
 		BC82D7EB2370AD22003BFE86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC82D7E92370AD22003BFE86 /* Main.storyboard */; };
 		BC82D7ED2370AD22003BFE86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC82D7EC2370AD22003BFE86 /* Assets.xcassets */; };
 		BC82D7F02370AD22003BFE86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC82D7EE2370AD22003BFE86 /* LaunchScreen.storyboard */; };
-		BC82D7F82370B1B8003BFE86 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82D7F72370B1B8003BFE86 /* CustomAnnotation.swift */; };
+		BC82D7F82370B1B8003BFE86 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82D7F72370B1B8003BFE86 /* CustomPointAnnotation.swift */; };
 		BC82D7FA2370B49F003BFE86 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82D7F92370B49F003BFE86 /* LocationManager.swift */; };
 		BC82D7FF2370C228003BFE86 /* LocationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82D7FE2370C228003BFE86 /* LocationsData.swift */; };
 		BC82D8012370C6D7003BFE86 /* LocationsCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82D8002370C6D7003BFE86 /* LocationsCodable.swift */; };
+		BCDDF6F7237C9AEC00F70DDE /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDDF6F6237C9AEC00F70DDE /* CustomAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		BC82D7EC2370AD22003BFE86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC82D7EF2370AD22003BFE86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC82D7F12370AD22003BFE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC82D7F72370B1B8003BFE86 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		BC82D7F72370B1B8003BFE86 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		BC82D7F92370B49F003BFE86 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BC82D7FE2370C228003BFE86 /* LocationsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsData.swift; sourceTree = "<group>"; };
 		BC82D8002370C6D7003BFE86 /* LocationsCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCodable.swift; sourceTree = "<group>"; };
+		BCDDF6F6237C9AEC00F70DDE /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +70,11 @@
 				BC82D7EC2370AD22003BFE86 /* Assets.xcassets */,
 				BC82D7EE2370AD22003BFE86 /* LaunchScreen.storyboard */,
 				BC82D7F12370AD22003BFE86 /* Info.plist */,
-				BC82D7F72370B1B8003BFE86 /* CustomAnnotation.swift */,
+				BC82D7F72370B1B8003BFE86 /* CustomPointAnnotation.swift */,
 				BC82D7F92370B49F003BFE86 /* LocationManager.swift */,
 				BC82D7FE2370C228003BFE86 /* LocationsData.swift */,
 				BC82D8002370C6D7003BFE86 /* LocationsCodable.swift */,
+				BCDDF6F6237C9AEC00F70DDE /* CustomAnnotation.swift */,
 			);
 			path = locations;
 			sourceTree = "<group>";
@@ -152,7 +155,8 @@
 				BC82D7FA2370B49F003BFE86 /* LocationManager.swift in Sources */,
 				BC82D7E82370AD22003BFE86 /* ViewController.swift in Sources */,
 				BC82D7E62370AD22003BFE86 /* AppDelegate.swift in Sources */,
-				BC82D7F82370B1B8003BFE86 /* CustomAnnotation.swift in Sources */,
+				BC82D7F82370B1B8003BFE86 /* CustomPointAnnotation.swift in Sources */,
+				BCDDF6F7237C9AEC00F70DDE /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

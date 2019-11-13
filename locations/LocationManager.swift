@@ -8,12 +8,16 @@
 
 import CoreLocation
 import UIKit
+import MapKit
 
 class LocationManager {
+    
+    var placemarks: [MKPlacemark?] = [nil, nil]
     
     let locationMgr = CLLocationManager()
     
     static let shared = LocationManager()
+    
     private init(){        
         locationMgr.desiredAccuracy = kCLLocationAccuracyBest
         locationMgr.distanceFilter = kCLDistanceFilterNone
@@ -22,6 +26,14 @@ class LocationManager {
     func requestAuthorization(){
         locationMgr.requestAlwaysAuthorization()
         locationMgr.startUpdatingLocation()
+    }
+    
+    func addPlaceMark(index: Int, location: Location) {
+        self.placemarks[index] = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: Double(location.lat)!, longitude: Double(location.lng)!))
+    }
+    
+    func createAnnotation(_ location: Location) -> CustomAnnotation {
+        return CustomAnnotation(title: location.title, subtitle: location.subtitle, imagePath: location.imagePath, location: CLLocationCoordinate2D(latitude: Double(location.lat)!, longitude: Double(location.lng)!))
     }
 
     
