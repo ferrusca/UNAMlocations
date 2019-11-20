@@ -35,6 +35,5 @@ class LocationManager {
     func createAnnotation(_ location: Location) -> CustomAnnotation {
         return CustomAnnotation(title: location.title, subtitle: location.subtitle, imagePath: location.imagePath, location: CLLocationCoordinate2D(latitude: Double(location.lat)!, longitude: Double(location.lng)!))
     }
-
     
 }

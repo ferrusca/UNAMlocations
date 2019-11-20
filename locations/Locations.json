@@ -1,0 +1,152 @@
+{ "locations": [
+    {
+        "title": "La Pape",
+        "subtitle": "Papelería local",
+        "lat": "19.327366",
+        "lng": "-99.182957",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Bicipuma",
+        "subtitle": "Anexo de ingeniería",
+        "lat": "19.327966",
+        "lng": "-99.183037",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Museo Universitario de Ciencias y Arte - MUCA",
+        "subtitle": "2",
+        "lat": "19.3310297",
+        "lng": "-99.1876568",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Ciencias",
+        "subtitle": "3",
+        "lat": "19.3238522",
+        "lng": "-99.1801877",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Química",
+        "subtitle": "4",
+        "lat": "19.3232377",
+        "lng": "-99.1792637",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Metro CU",
+        "subtitle": "5",
+        "lat": "19.3240189",
+        "lng": "-99.1748546",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Escuela Nacional de Trabajo Social",
+        "subtitle": "6",
+        "lat": "19.323764",
+        "lng": "-99.1868045",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Contaduría y Administración",
+        "subtitle": "7",
+        "lat": "19.3240978",
+        "lng": "-99.1846067",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Nike Store Pumas",
+        "subtitle": "Universidad Nacional",
+        "lat": "19.3333944",
+        "lng": "-99.1948631",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Instituto de Investigaciones Biomédicas",
+        "subtitle": "9",
+        "lat": "19.3232747",
+        "lng": "-99.1913721",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Estadio Olímpico Universitario",
+        "subtitle": "10",
+        "lat": "19.3316385",
+        "lng": "-99.1917423",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Rectoria de la UNAM",
+        "subtitle": "11",
+        "lat": "19.3319492",
+        "lng": "-99.1886188",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Psicología",
+        "subtitle": "12",
+        "lat": "19.334838",
+        "lng": "-99.188834",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Filosofía y Letras",
+        "subtitle": "13",
+        "lat": "19.3344593",
+        "lng": "-99.1864938",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Derecho",
+        "subtitle": "14",
+        "lat": "19.3346575",
+        "lng": "-99.1849516",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Odontología",
+        "subtitle": "15",
+        "lat": "19.3342901",
+        "lng": "-99.1816082",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Medicina",
+        "subtitle": "16",
+        "lat": "19.3331143",
+        "lng": "-99.1802108",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Tienda UNAM",
+        "subtitle": "17",
+        "lat": "19.3209543",
+        "lng": "-99.175467",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Ciencias Políticas y Sociales",
+        "subtitle": "18",
+        "lat": "19.3185994",
+        "lng": "-99.1781057",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Universum",
+        "subtitle": "19",
+        "lat": "19.3117873",
+        "lng": "-99.1803843",
+        "imagePath": "guess"
+    },
+    {
+        "title": "Facultad de Economía",
+        "subtitle": "20",
+        "lat": "19.3347811",
+        "lng": "-99.1834828",
+        "imagePath": "guess"
+    }
+]}
+
+
+

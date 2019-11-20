@@ -36,12 +36,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             guard let directionsResponse = response else {
                 return
             }
-            let route = directionsResponse.routes.first
-            self.myMap.addOverlay(route!.polyline)
+            let route = directionsResponse.routes[0]
+            self.myMap.removeOverlays(self.myMap.overlays)
+            self.myMap.addOverlay(route.polyline)
             
             // Create area between A and B point
-            let area = route?.polyline.boundingMapRect
-            self.myMap.setRegion(MKCoordinateRegion(area!), animated: true)
+            let area = route.polyline.boundingMapRect
+            self.myMap.setRegion(MKCoordinateRegion(area), animated: true)
         }
         
     }
@@ -53,10 +54,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         sourceTextField.addTarget(self, action: #selector(showSourceOptions), for: .touchDown)
         destinationTextField.addTarget(self, action: #selector(showDestinationOptions), for: .touchDown)
         LocationManager.shared.requestAuthorization()
-        let jsonData = try! JSONDecoder().decode(Locations.self, from: locationsData)
-        print(jsonData)
-        self.jsonData = jsonData
+        if let url = Bundle.main.url(forResource: "Locations", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let jsonData = try JSONDecoder().decode(Locations.self, from: data)
+                print(jsonData)
+                self.jsonData = jsonData
+            } catch {
+                print("error:\(error)");
+            }
+        }
     }
+    
     
     @objc func showSourceOptions(textField: UITextField) {
         print(textField)
@@ -93,32 +102,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     // Or when location is updated
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let line = MKPolylineRenderer(overlay: overlay)
-        line.strokeColor = .yellow
+        line.strokeColor = UIColor(red: 0/255, green: 132/255, blue: 8/255, alpha: 1.0)
         line.lineWidth = 6.0
         return line
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
-        // Tryin to reuse annotations
         let pinAnnotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "PinAnnotationView")
         pinAnnotationView.canShowCallout = true
-//
-//        if pinAnnotationView == nil {
-//            pinAnnotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "PinAnnotationView")
-//
-//            // Callout is a popover above the pin
-//            pinAnnotationView?.canShowCallout = true
-//
-//        } else {
-//            // Reusing from recycled annotations
-//            pinAnnotationView?.annotation = annotation
-//        }
-        
         if let pinAnnotation = annotation as? CustomAnnotation {
             pinAnnotationView.image = UIImage(named: pinAnnotation.imagePath)
         }
-        
         return pinAnnotationView
     }
 }
